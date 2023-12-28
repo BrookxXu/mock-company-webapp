@@ -7,12 +7,12 @@ pipeline {
    stages {
     stage('Build'){
         steps{
-            ./gradlew assemble
+            gradlew assemble
         }
     }
     stage('Test'){
             steps{
-                ./gradlew test
+                gradlew test
             }
         }
    }
