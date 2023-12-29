@@ -5,14 +5,14 @@ pipeline {
    */
    agent any
    stages {
-//     stage('Build'){
-//         steps{
-//             gradlew assemble
-//         }
-//     }
+    stage('Build'){
+        steps{
+            sh './gradlew assemble'
+        }
+    }
     stage('Test'){
         steps{
-            gradlew test
+            sh './gradlew test'
         }
     }
    }
